@@ -16,4 +16,4 @@ spec:
       - name: container1
         image: osamapatel/test-frontend:latest
         ports:
-        - containerPort: 6000
+        - containerPort: 3000
