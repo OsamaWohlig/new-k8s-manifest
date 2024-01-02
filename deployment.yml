@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-deployment
+  name: k8s
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: k8s-pod-label
+      app: k8s
   template:
     metadata:
       labels:
-        app: k8s-template-label
+        app: k8s
     spec:
       containers:
       - name: container1
