@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-pod-label
+  template:
+    metadata:
+      labels:
+        app: k8s-template-label
+    spec:
+      containers:
+      - name: container1
+        image: your-container1-image:tag
+        ports:
+        - containerPort: 6000
