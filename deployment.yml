@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: container1
-        image: osamapatel/new-k8s:latest
+        image: osamapatel/test-frontend:latest
         ports:
         - containerPort: 6000
