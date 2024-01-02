@@ -4,7 +4,7 @@ metadata:
   name: k8s-service
 spec:
   selector:
-    app: k8s-template-label
+    app: k8s-deployment
   ports:
     - protocol: TCP
       port: 80
